@@ -1,0 +1,66 @@
+{
+	"name": "handpressed/substratum",
+	"description": "WordPress boilerplate configured and managed with Composer and PHP dotenv. Based on Roots Bedrock.",
+	"license": "MIT",
+	"type": "project",
+	"keywords": [
+		"WordPress",
+		"boilerplate",
+		"phpdotenv",
+		"CMS",
+		"composer",
+		"wpackagist"
+	],
+	"authors": [
+		{
+			"name": "Nicholas at HandPressed",
+			"email": "nicholas@handpressed.net",
+			"homepage": "https://purbeckpixels.com",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"source": "https://github.com/handpressed/substratum",
+		"issues": "https://github.com/handpressed/substratum/issues"
+	},
+	"repositories": {
+		"wpackagist": {
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		}
+	},
+	"require": {
+		"php": ">=5.6",
+		"johnpbloch/wordpress": "@stable",
+		"composer/installers": "@stable",
+		"vlucas/phpdotenv": "^2.4",
+		"oscarotero/env": "^1.1.0",
+		"roots/wp-password-bcrypt": "1.0.0"
+	},
+	"suggest": {
+		"wp-cli/wp-cli": "@stable"
+	},
+	"extra": {
+		"wordpress-install-dir": "web/wp",
+		"installer-paths": {
+			"web/app/mu-plugins/{$name}": [
+				"type:wordpress-muplugin"
+			],
+			"web/app/plugins/{$name}": [
+				"type:wordpress-plugin"
+			],
+			"web/app/themes/{$name}": [
+				"type:wordpress-theme"
+			]
+		}
+	},
+	"scripts": {
+		"generate-salts": [
+			"echo '<?php' > conf/wp-salts.php && curl -L https://api.wordpress.org/secret-key/1.1/salt/ >> conf/wp-salts.php"
+		],
+		"post-root-package-install": [
+			"composer run generate-salts",
+			"php -r \"rename('.env.example', '.env');\""
+		]
+	}
+}
