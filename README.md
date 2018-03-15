@@ -100,7 +100,7 @@ See [Roots Bedrock documentation](https://roots.io/bedrock/docs/folder-structure
 
 ## See Also
 
-[WordPress Composer Boilerplate](https://github.com/handpressed/wp-composer-boilerplate)
+[WordPress Multitenancy Boilerplate](https://github.com/handpressed/wp-multitenancy-boilerplate)
 
 ## Credit
 
