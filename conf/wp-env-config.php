@@ -79,6 +79,9 @@ define( 'WP_AUTO_UPDATE_CORE', 'minor' );
  */
 define( 'DISALLOW_FILE_MODS', true );
 
+/**
+ * Custom constants.
+ */
 if ( file_exists( $root_dir . '/conf/wp-constants.php' ) ) {
 	require_once $root_dir . '/conf/wp-constants.php';
 }
