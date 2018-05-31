@@ -11,7 +11,7 @@ WordPress boilerplate configured and managed with Composer and PHP dotenv. Based
 	- [Plugins](#plugins)
 	- [Constants](#constants)
 - [Directory Structure](#directory-structure)
-- [See also](#see-also)
+- [See Also](#see-also)
 - [Credit](#credit)
 
 ## Features
