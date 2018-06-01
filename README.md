@@ -2,17 +2,18 @@
 
 WordPress boilerplate configured and managed with Composer and PHP dotenv. Based on Roots Bedrock.
 
-- [Features](#features)
-- [Requirements](#requirements)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-	- [Themes](#themes)
-	- [Plugins](#plugins)
-	- [Constants](#constants)
-- [Directory Structure](#directory-structure)
-- [See Also](#see-also)
-- [Credit](#credit)
+- [WordPress Substratum](#wordpress-substratum)
+	- [Features](#features)
+	- [Requirements](#requirements)
+	- [Prerequisites](#prerequisites)
+	- [Installation](#installation)
+	- [Configuration](#configuration)
+		- [Themes](#themes)
+		- [Plugins](#plugins)
+		- [Constants](#constants)
+	- [Directory Structure](#directory-structure)
+	- [See Also](#see-also)
+	- [Credit](#credit)
 
 ## Features
 
@@ -43,13 +44,13 @@ $ composer create-project handpressed/substratum {directory}
 $ cd {directory}
 ```
 
-Replace `{directory}` with the name of your new project, e.g. its domain name.
+Replace `{directory}` with the name of your new WordPress project, e.g. its domain name.
 
 ## Configuration
 
-Open the `.env` file and add your new site's home URL (`WP_HOME`) and database credentials (`DB_NAME`, `DB_USER`, `DB_PASSWORD`). You can also define the database `$table_prefix` (default is `wp_`) if required.
+Open the `.env` file and add your new project's home URL (`WP_HOME`) and database credentials (`DB_NAME`, `DB_USER`, `DB_PASSWORD`). You can also define the database `$table_prefix` (default is `wp_`) if required.
 
-Set your site's vhost document root to `/path/to/{directory}/web`.
+Set your project's vhost document root to `/path/to/{directory}/web`.
 
 ### Themes
 
