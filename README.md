@@ -25,7 +25,7 @@ WordPress boilerplate configured and managed with Composer and PHP dotenv. Based
 
 ## Requirements
 
-- PHP 5.6+
+- PHP 7.2+
 - Composer
 
 ## Prerequisites
